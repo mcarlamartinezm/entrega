@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Viva la novia! Vestidos</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Lavishly+Yours&display=swap" rel="stylesheet">
+</head>
+<body>   
+    <header>
+        <nav class="nav_bar">
+            <div class="logo"  id="logo">
+                <a href="../index.html">
+                    <figure><img src="../asset/logo/logo.png" alt=""></figure> 
+                </a>
+                <div id="frase_logo"><a href="../index.html">¡Viva la novia!</a></div>
+            </div>   
+            <div class="menu_icon" id="menu_icon"><figure>
+                <img src="../asset/logo/menu.webp" alt="">
+            </div>
+            <ol class="menu_desplegable" id="menu_desplegable">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="vestidos.html">VESTIDOS</a></li>
+                <li><a href="accesorios.html">ACCESORIOS</a></li> 
+                <li><a href="novias.html"> NOVIAS</a></li> 
+                <li><a href="agenda.html">AGENDA</a></li> 
+            </ol>  
+        </nav>
+    </header>
+    <main>
+        <h2>Vestidos</h2><!-- Pagina donde se muestran los vestidos, debe incluir un filtro   -->          
+        <section id="filtro_container">
+            <form action="" method="get">
+                <label for="disponibilidad">Disponibilidad</label>
+                <select class="form-control" name="disponibilidad">
+                    <option value="selecion">Selecionar</option>
+                    <option value="a.pedido">A pedido</option>
+                    <option value="existencia">En existencia</option>
+                </select>
+                <label for="talla">Talla</label>
+                <select class="form-control" name="talla">
+                     <option value="selecion">Selecionar</option>
+                     <option value="36">36</option>
+                     <option value="40">40</option>
+                     <option value="42">42</option>
+                     <option value="46">46</option>
+                     <option value="48">48</option>
+                     <option value="50">50</option>
+                </select>
+                <label for="estilo">Estilo</label>
+                <select class="form-control" name="estilo">
+                    <option value="selecion">Selecionar</option>
+                    <option value="sirena">Tipo sirena</option>
+                    <option value="princesa">Tipo Princesa</option>
+                    <option value="impresio">Tipo Imperio</option>
+                    <option value="A">Corte A</option>
+                    <option value="recto">Corte recto</option>
+                </select>
+                <label for="color">Color</label>
+                <select name="form-control" name="color">
+                    <option value="selecion">Selecionar</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="rosa">Rosa</option>
+                    <option value="marfil">Marfil</option>
+                    <option value="beige">Beige</option>
+                    <option value="dorado">Dorado</option>
+                    <option value="especiales">Especiales</option>
+                </select>
+                <label for="precio">Precio</label>
+                <select name="form-control" name="precio">
+                    <option value="selecion">Selecionar</option>
+                    <option value="rango1">De 120.000 a 300.000</option>
+                    <option value="rango2">De 300.000 a 500.000</option>
+                    <option value="rango3">De 500.000 a 800.000</option>
+                    <option value="rango4">De 800.000 a 1.500.000</option>
+                    <option value="rango5">De 1.500.000 o más</option>
+                </select>
+                <button class="btn btn-outline-success col-12 mt-2">Buscar</button>
+            </form>
+        </section>
+        <section class="img_container">
+            <img src="../asset/vestidos/1.png" alt="">
+            <img src="../asset/vestidos/2.png" alt="">
+            <img src="../asset/vestidos/3.png" alt="">
+            <img src="../asset/vestidos/4.png" alt="">
+            <img src="../asset/vestidos/5.png" alt="">
+            <img src="../asset/vestidos/6.png" alt="">
+            <img src="../asset/vestidos/7.png" alt="">
+            <img src="../asset/vestidos/8.png" alt="">
+            <img src="../asset/vestidos/9.png" alt="">
+         </section>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_section">
+                <h4>Contacto</h4>
+                <li>Mi calle preferida 123, piso 3, mi comuna.</li>
+                <li>contacto@vivalanovia.cl</li>
+                <li>+56(9) 1234 5678</li>
+                <li>+56(9) 1234 5689</li>
+            </div>
+            <div class="footer_section">
+                <h4>Redes Sociales</h4>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>whatsapp</li>
+            </div>
+            <div class="footer_section">
+                <h4>Más información</h4>
+                <li><a href="#">Guia de tallas</a></li>
+                <li><a href="#">Cómo comprar</a></li>
+                <li><a href="#">Retiros y despachos</a></li>
+                <li><a href="#">Cambios y devolucione</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Términos del servicio</a></li>
+                <li><a href="#">Política de reembolso</a></li>
+            </div>
+        </div>
+        <P>® Marca Registrada</P>
+    </footer>
+</body>
+</html>
