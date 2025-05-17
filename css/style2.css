@@ -1,0 +1,400 @@
+body{
+    background-color: white;
+    font-family: "Delius", cursive, sans-serif;
+    font-size: 14px;
+    min-width: 480px;
+    
+}
+
+a {
+  text-decoration: none;
+}
+ 
+/*--------------------------------header-------------------------*/
+
+.nav_bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: -30px;
+    background-color: white;
+    box-shadow: 0px 17px 7px -7px rgba(0, 0, 0, 0.34);
+  }
+
+/*--------logo y nombre------*/
+
+#logo{
+   width:350px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+div#logo figure{
+  width :80px;
+  position: relative;
+  
+}
+
+div#logo figure img{
+  width: 100%;
+}
+
+#frase_logo{
+  text-decoration: none;
+  font-size: 2.6em;
+  font-family: "Lavishly Yours", sans-serif;
+  color: black;
+  position: relative;
+  left: -50px;
+  cursor: pointer;
+  
+}
+
+
+/*----------------nav hamburguesa---------------*/
+#menu_icon {
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+    
+  }
+  
+  #menu_icon img {
+    width: 30px;
+  }
+
+/*----------nav desplegable-------*/
+
+#menu_desplegable {
+    max-width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+
+  }
+  
+  #menu_desplegable li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    padding: 0px 16px;
+    justify-content: center;
+    
+  }
+
+  #menu_desplegable li:hover {
+    background-color: rgb(255, 230, 221);
+    padding: 4px;
+    border-radius: 16px;
+  }
+
+
+/*--------------------------------------------main----------------------------------------------*/
+
+.presentacion{
+   display: block;
+   margin: 0px;
+}
+
+.presentacion img{
+    width: 100%;
+    height: auto;
+    border-radius: none;
+    /* opacity: 30%;<------------- quitar cuando termine*/
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  color: white;
+  text-shadow: 0px 0px 18px rgba(0,0,0,1);
+}
+
+#mi_boton{
+    background-color:rgb(252, 244, 244); 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    position: absolute;
+    width: 150px;
+    top: 50%; /* verticalmente centrado */
+    left: 50%; /* horizontalmente centrado */
+    transform: translate(-50%, -50%);
+
+}
+
+#mi_boton:hover {
+    background-color:lightsalmon;
+  }
+
+  section p {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 50px 0px;
+  }
+
+
+  /*------------------------------------------section vestidos-------------------------*/
+img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+h2 {   /* <----------titulos--------*/
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  font-size:1.8em;
+}
+
+.img_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 5%;
+}
+
+.img_muestra{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 5%;  
+}
+
+  
+/*----------------------------------agendamiento-------------------------*/
+
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.explicacion{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin: 100px 5%;
+}
+
+/*formulario de agenda de visita*/
+
+#reserva{
+  margin: auto;
+  width: 80%;
+  display: block;
+  justify-items: center;
+}
+
+form {
+  background: white;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 70%;
+  width: 100%;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: lightsalmon;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  background-color: lightsalmon;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: lightsalmon;
+}
+
+/*-------------------------------filtro de busqueda--------------*/
+
+#filtro_container{
+  display: flex;
+  justify-content: center;
+}
+
+#filtro_container form{
+  display: flex;
+  flex-direction: row;
+  justify-items: baseline;
+  }
+
+#filtro_container label{
+  font-size: 1.2rem;
+  padding: 20px;
+  }
+
+#filtro_container select{
+  width: 150px;
+}
+
+#filtro_container form{
+  width: 0px 2000px;
+}
+
+#filtro_container button{
+  margin: 0px 20px;
+}
+
+
+
+/*------------------------------------footer-------------------------------------*/
+
+footer{
+    background-color: rgb(252, 244, 244);
+    box-shadow: 0px -13px 7px -2px rgba(0,0,0,0.23);
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer_section{
+  flex: 1;
+  min-width: 200px;
+  margin: 20px 40px;
+  
+}
+
+.footer_section h4{
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+li {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 8px 0px;
+}
+
+footer p{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 1.2em;
+}
+
+#filtro{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*------------------------------medias-------------------------*/
+
+
+ /* Responsive para pantallas menores a 767px */
+ @media (max-width: 767px) {
+  #menu_desplegable{
+    display: none;
+  }
+
+  #menu_icon{
+    display: block;
+  }
+
+  h1{
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .img_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+  }
+
+  .img_muestra{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+  }
+
+  #filtro_container form{
+    display: flex;
+    flex-direction: column;
+    justify-items: baseline;
+    }
+
+  #mi_boton{
+    position: absolute;
+    width: 150px;
+    top: 40%; /* verticalmente centrado */
+    left: 50%; /* horizontalmente centrado */
+    transform: translate(-50%, -50%);
+  }
+
+  .footer_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_section{
+    text-align: center;
+  }
+
+}
+
+/* Mostrar menú completo desde 768px hacia arriba */
+
+
+@media (min-width: 768px) {
+#menu_icon{
+  display: none;
+}
+.footer_container{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ 
+}
