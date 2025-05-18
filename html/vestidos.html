@@ -34,8 +34,8 @@
     </header>
     <main>
         <h2>Vestidos</h2><!-- Pagina donde se muestran los vestidos, debe incluir un filtro   -->          
-        <section id="filtro_container">
-            <form action="" method="get">
+        <section>
+            <form id="filtro" action="" method="get">
                 <label for="disponibilidad">Disponibilidad</label>
                 <select class="form-control" name="disponibilidad">
                     <option value="selecion">Selecionar</option>
@@ -80,7 +80,7 @@
                     <option value="rango4">De 800.000 a 1.500.000</option>
                     <option value="rango5">De 1.500.000 o más</option>
                 </select>
-                <button class="btn btn-outline-success col-12 mt-2">Buscar</button>
+                <input type="submit" value="Enviar" class="boton_enviar">
             </form>
         </section>
         <section class="colecciones">

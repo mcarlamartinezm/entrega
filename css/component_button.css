@@ -9,7 +9,7 @@
   transition: background-color 0.5s ease;
   position: absolute;
   width: 150px;
-  top: 50%; /* verticalmente centrado */
+  top: 40%; /* verticalmente centrado */
   left: 50%; /* horizontalmente centrado */
   transform: translate(-50%, -50%);
 }

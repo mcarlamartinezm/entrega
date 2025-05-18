@@ -1,0 +1,29 @@
+
+#filtro_container{
+  display: flex;
+  justify-content: right;
+}
+
+#filtro_container form{
+  display: flex;
+  flex-direction: row;
+  justify-items: baseline;
+  width: 200px;
+  }
+
+#filtro_container label{
+  font-size: 1.2rem;
+  padding: 20px;
+  }
+
+#filtro_container select{
+  width: 150px;
+}
+
+#filtro_container form{
+  width: 0px 2000px;
+}
+
+#filtro_container button{
+  margin: 0px 20px;
+}

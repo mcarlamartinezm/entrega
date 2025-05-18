@@ -3,7 +3,7 @@ body {
   background-color: white;
   font-family: "Delius", cursive, sans-serif;
   font-size: 14px;
-  min-width: 480px;
+  min-width: 500px;
   margin: 0;
 }
 
@@ -104,7 +104,7 @@ div#logo figure img {
   transition: background-color 0.5s ease;
   position: absolute;
   width: 150px;
-  top: 50%; /* verticalmente centrado */
+  top: 40%; /* verticalmente centrado */
   left: 50%; /* horizontalmente centrado */
   transform: translate(-50%, -50%);
 }
@@ -113,9 +113,10 @@ div#logo figure img {
   background-color: lightsalmon;
 }
 
-img {
+.explicacion img {
   width: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .explicacion {
@@ -133,23 +134,23 @@ img {
   justify-items: center;
 }
 
-form {
+#reserva form {
   background: white;
-  padding: 4rem;
+  padding: 5rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   max-width: 70%;
   width: 100%;
 }
 
-label {
+#reserva label {
   display: block;
   margin-bottom: 0.5rem;
   color: black;
   font-weight: 600;
 }
 
-input, select, textarea {
+#reserva1 {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #ccc;
@@ -159,13 +160,13 @@ input, select, textarea {
   transition: border 0.2s ease-in-out;
 }
 
-input:focus, select:focus, textarea:focus {
+#reserva1 {
   border-color: lightsalmon;
   outline: none;
 }
 
-button {
-  width: 100%;
+.boton_enviar {
+  width: 100px;
   background-color: lightsalmon;
   color: white;
   padding: 0.9rem;
@@ -180,32 +181,17 @@ button:hover {
   background-color: lightsalmon;
 }
 
-#filtro_container {
-  display: flex;
-  justify-content: center;
-}
-
-#filtro_container form {
-  display: flex;
-  flex-direction: row;
-  justify-items: baseline;
-}
-
-#filtro_container label {
-  font-size: 1.2rem;
-  padding: 20px;
-}
-
-#filtro_container select {
-  width: 150px;
-}
-
-#filtro_container form {
-  width: 0px 2000px;
-}
-
-#filtro_container button {
-  margin: 0px 20px;
+#mensaje {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+  height: 300px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .colecciones {
@@ -217,6 +203,11 @@ button:hover {
 
 .card_container {
   display: inline;
+  width: 400px;
+}
+
+img {
+  opacity: 20%;
 }
 
 .card_vestido {
@@ -224,6 +215,11 @@ button:hover {
   border-radius: 20px;
   background: linear-gradient(transparent 80%, white);
   margin: none;
+  height: 550px;
+}
+
+.colecciones div figure img {
+  width: 100%;
 }
 
 .card_footer {
@@ -332,7 +328,7 @@ footer p {
     grid-template-columns: 1fr;
     margin: 10%;
   }
-  .img_muestra {
+  .colecciones {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10%;

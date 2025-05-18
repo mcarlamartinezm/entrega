@@ -7,20 +7,25 @@
 
 .card_container{
     display: inline;
-}
+    width: 400px;
+   }
 
-// img{
-//     opacity: 10%;    
-// }
+img{
+    opacity: 20%;    
+}
 
 .card_vestido{
     box-shadow: 0 5px 10px #c0c0c0;
     border-radius: 20px;
     background: linear-gradient(transparent 80%, white);
     margin: none;
+    height: 550px;
+    
 }
 
-
+.colecciones div figure img{
+    width: 100%;
+    }
 
 .card_footer{
     border: 1px solid black;

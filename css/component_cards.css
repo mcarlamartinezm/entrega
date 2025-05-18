@@ -7,6 +7,11 @@
 
 .card_container {
   display: inline;
+  width: 400px;
+}
+
+img {
+  opacity: 20%;
 }
 
 .card_vestido {
@@ -14,6 +19,11 @@
   border-radius: 20px;
   background: linear-gradient(transparent 80%, white);
   margin: none;
+  height: 550px;
+}
+
+.colecciones div figure img {
+  width: 100%;
 }
 
 .card_footer {
