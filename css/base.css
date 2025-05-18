@@ -1,0 +1,24 @@
+body {
+  background-color: white;
+  font-family: "Delius", cursive, sans-serif;
+  font-size: 14px;
+  min-width: 480px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 { /* <----------titulos--------*/
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  font-size: 1.8em;
+}
+
+section {
+  display: block;
+}
+
+/*# sourceMappingURL=base.css.map */

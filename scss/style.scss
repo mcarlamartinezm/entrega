@@ -1,8 +1,10 @@
-@use 'variables';
 @use 'base';
+@use 'variables';
 @use 'header';
-@use 'agenda';
-@use 'button';
-@use 'cards';
+@use 'component_button';
+@use 'component_agenda';
+@use 'component_cards';
+@use 'component_empresa';
+@use 'component_presentacion';
 @use 'footer';
 @use 'medias';

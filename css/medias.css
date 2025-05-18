@@ -1,64 +1,54 @@
+@charset "UTF-8";
 @media (max-width: 767px) {
-  #menu_desplegable{
+  #menu_desplegable {
     display: none;
   }
-
-  #menu_icon{
+  #menu_icon {
     display: block;
   }
-
-  h1{
+  h1 {
     font-size: 1.8em;
     text-align: center;
   }
-
-  #colecciones{
+  #colecciones {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10%;
   }
-
-  .img_muestra{
+  .img_muestra {
     display: grid;
     grid-template-columns: 1fr;
     margin: 10%;
   }
-
-  #filtro_container form{
+  #filtro_container form {
     display: flex;
     flex-direction: column;
     justify-items: baseline;
-    }
-
-  #mi_boton{
+  }
+  #mi_boton {
     position: absolute;
     width: 150px;
     top: 40%; /* verticalmente centrado */
     left: 50%; /* horizontalmente centrado */
     transform: translate(-50%, -50%);
   }
-
-  .footer_container{
+  .footer_container {
     flex-direction: column;
     align-items: center;
   }
-  .footer_section{
+  .footer_section {
     text-align: center;
   }
-
 }
-
 /* Mostrar menú completo desde 768px hacia arriba */
-
-
 @media (min-width: 768px) {
-#menu_icon{
-  display: none;
-}
-.footer_container{
-  flex-direction: row;
-  justify-content: space-between;
+  #menu_icon {
+    display: none;
+  }
+  .footer_container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
- 
-}
+/*# sourceMappingURL=medias.css.map */

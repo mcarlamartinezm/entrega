@@ -1,0 +1,26 @@
+.presentacion{
+   display: block;
+   margin: 0px;
+}
+
+.presentacion img{
+    width: 100%;
+    height: auto;
+    border-radius: none;
+    /* opacity: 30%;<------------- quitar cuando termine*/
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  color: white;
+  text-shadow: 0px 0px 18px rgba(0,0,0,1);
+}
+
+  section p {
+    font-size: 1.4em;
+    text-align: center;
+    margin: 50px 0px;
+  }

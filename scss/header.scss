@@ -1,0 +1,79 @@
+
+.nav_bar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: -30px;
+    background-color: white;
+    box-shadow: 0px 17px 7px -7px rgba(0, 0, 0, 0.34);
+  }
+
+/*--------logo y nombre------*/
+
+#logo{
+   width:350px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+div#logo figure{
+  width :80px;
+  position: relative;
+  
+}
+
+div#logo figure img{
+  width: 100%;
+}
+
+#frase_logo{
+  text-decoration: none;
+  font-size: 2.6em;
+  font-family: "Lavishly Yours", sans-serif;
+  color: black;
+  position: relative;
+  left: -50px;
+  cursor: pointer;
+  
+}
+
+#menu_icon {
+    display: none;
+    cursor: pointer;
+    z-index: 20;
+    
+  }
+  
+  #menu_icon img {
+    width: 30px;
+  }
+
+/*----------nav desplegable-------*/
+
+#menu_desplegable {
+    max-width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+
+  }
+  
+  #menu_desplegable li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    padding: 0px 16px;
+    justify-content: center;
+    
+  }
+
+  #menu_desplegable li:hover {
+    background-color: rgb(255, 230, 221);
+    padding: 4px;
+    border-radius: 16px;
+  }

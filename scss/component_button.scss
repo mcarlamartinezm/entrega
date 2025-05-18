@@ -1,0 +1,19 @@
+#boton_agenda{
+    background-color:rgb(252, 244, 244); 
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    position: absolute;
+    width: 150px;
+    top: 50%; /* verticalmente centrado */
+    left: 50%; /* horizontalmente centrado */
+    transform: translate(-50%, -50%);
+}
+
+#boton_agenda:hover {
+    background-color:lightsalmon;
+  }

@@ -1,0 +1,37 @@
+.colecciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 2%;
+   }
+
+.card_container{
+    display: inline;
+}
+
+// img{
+//     opacity: 10%;    
+// }
+
+.card_vestido{
+    box-shadow: 0 5px 10px #c0c0c0;
+    border-radius: 20px;
+    background: linear-gradient(transparent 80%, white);
+    margin: none;
+}
+
+
+
+.card_footer{
+    border: 1px solid black;
+    color: white;
+    height: 0px;
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 385px;
+    font-size: 1.3em;
+    text-shadow: 2px 2px 4px lightsalmon;
+    }
