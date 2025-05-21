@@ -150,21 +150,6 @@ div#logo figure img {
   font-weight: 600;
 }
 
-#reserva1 {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
-  transition: border 0.2s ease-in-out;
-}
-
-#reserva1 {
-  border-color: lightsalmon;
-  outline: none;
-}
-
 .boton_enviar {
   width: 100px;
   background-color: lightsalmon;
@@ -197,43 +182,45 @@ button:hover {
 .colecciones {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin: 2%;
+  gap: 20px;
+  margin: 5%;
 }
 
 .card_container {
-  display: inline;
-  width: 400px;
-}
-
-img {
-  opacity: 20%;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .card_vestido {
-  box-shadow: 0 5px 10px #c0c0c0;
-  border-radius: 20px;
-  background: linear-gradient(transparent 80%, white);
-  margin: none;
-  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  right: -200px;
 }
 
-.colecciones div figure img {
-  width: 100%;
+.card_vestido img {
+  width: 98%;
+  height: 98%;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
 }
 
 .card_footer {
-  border: 1px solid black;
-  color: white;
-  height: 0px;
-  position: relative;
-  bottom: 70px;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  max-width: 385px;
-  font-size: 1.3em;
-  text-shadow: 2px 2px 4px lightsalmon;
+  font-family: "lavishly Yours";
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  color: #fff;
+  padding: 0px;
+  text-align: bottom;
+  font-size: 2.2em;
 }
 
 .presentacion {

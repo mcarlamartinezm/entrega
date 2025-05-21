@@ -35,21 +35,6 @@
   font-weight: 600;
 }
 
-#reserva1 {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 1.2rem;
-  font-size: 1rem;
-  transition: border 0.2s ease-in-out;
-}
-
-#reserva1 {
-  border-color: lightsalmon;
-  outline: none;
-}
-
 .boton_enviar {
   width: 100px;
   background-color: lightsalmon;
