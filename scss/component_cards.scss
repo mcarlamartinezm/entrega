@@ -1,9 +1,3 @@
-.colecciones{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 5%;
-   }
 
 .card_container{
      position: relative;
@@ -11,10 +5,16 @@
      overflow: hidden;
      box-shadow: 8px 8px 10px rgba(0,0,0,0.1);
      background-color: #fff;
-     
+        
    }
 
-.card_vestido{
+.card_container:hover{
+    transform: scale(105%);
+    cursor: pointer; 
+    transition: scale, 20s, ease-in; 
+   }
+
+.card{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -24,7 +24,7 @@
       right: -200px;
 }
 
-.card_vestido img {
+.card img {
     width: 98%;
     height: 98%;
     border-radius: 10px;

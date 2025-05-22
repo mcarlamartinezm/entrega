@@ -113,6 +113,58 @@ div#logo figure img {
   background-color: lightsalmon;
 }
 
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 200%;
+  animation: slide 8s infinite alternate ease-in-out;
+}
+
+.slider img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 1rem;
+  max-width: 90%;
+}
+
+.slider-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-slider {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-slider:hover {
+  background-color: lightsalmon;
+}
+
 .explicacion img {
   width: 100%;
   object-fit: cover;
@@ -179,13 +231,6 @@ button:hover {
   vertical-align: top;
 }
 
-.colecciones {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 5%;
-}
-
 .card_container {
   position: relative;
   border-radius: 15px;
@@ -194,7 +239,13 @@ button:hover {
   background-color: #fff;
 }
 
-.card_vestido {
+.card_container:hover {
+  transform: scale(105%);
+  cursor: pointer;
+  transition: scale, 20s, ease-in;
+}
+
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,7 +255,7 @@ button:hover {
   right: -200px;
 }
 
-.card_vestido img {
+.card img {
   width: 98%;
   height: 98%;
   border-radius: 10px;
@@ -223,31 +274,10 @@ button:hover {
   font-size: 2.2em;
 }
 
-.presentacion {
-  display: block;
-  margin: 0px;
-}
-
-.presentacion img {
-  width: 100%;
-  height: auto;
-  border-radius: none;
-  /* opacity: 30%;<------------- quitar cuando termine*/
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 100px;
-  color: white;
-  text-shadow: 0px 0px 18px rgb(0, 0, 0);
-}
-
-section p {
-  font-size: 1.4em;
+.empresa {
+  margin: 15% 10%;
+  font-size: 2em;
   text-align: center;
-  margin: 50px 0px;
 }
 
 footer {
@@ -299,51 +329,67 @@ footer p {
   justify-content: center;
 }
 
-@media (max-width: 767px) {
-  #menu_desplegable {
+@media (max-width: 768px) {
+  #menu_desplegable { /*desaparece el listado de menu */
     display: none;
   }
   #menu_icon {
-    display: block;
-  }
-  h1 {
-    font-size: 1.8em;
-    text-align: center;
-  }
-  #colecciones {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 10%;
-  }
-  .colecciones {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 10%;
-  }
-  #filtro_container form {
     display: flex;
-    flex-direction: column;
-    justify-items: baseline;
+    flex-direction: row-reverse;
   }
-  #mi_boton {
-    position: absolute;
-    width: 150px;
-    top: 40%; /* verticalmente centrado */
-    left: 50%; /* horizontalmente centrado */
-    transform: translate(-50%, -50%);
+  .slider img {
+    height: 70vh;
   }
-  .footer_container {
-    flex-direction: column;
-    align-items: center;
+  .slider-content h1 {
+    font-size: 1.8rem;
   }
-  .footer_section {
-    text-align: center;
+  .btn-slider {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.colecciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10%;
+}
+
+.colecciones {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10%;
+}
+
+#filtro_container form {
+  display: flex;
+  flex-direction: column;
+  justify-items: baseline;
+}
+
+.footer_container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_section {
+  text-align: center;
+}
+
 /* Mostrar menú completo desde 768px hacia arriba */
 @media (min-width: 768px) {
   #menu_icon {
     display: none;
+  }
+  .colecciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 5%;
   }
   .footer_container {
     flex-direction: row;

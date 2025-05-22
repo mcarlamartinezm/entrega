@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Viva la Novia!</title>
     <link rel="icon" type="image/x-icon" href="./asset/logo/favicon.gif">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
                 <div id="frase_logo"><a href="index.html">¡Viva la novia!</a></div>
             </div>   
             <div class="menu_icon" id="menu_icon"><figure>
-                <img src="./asset/logo/menu.webp" alt="">
+                <img src="./asset/logo/menu.gif" alt="">
             </div>
             <ol class="menu_desplegable" id="menu_desplegable">
                 <li><a href="index.html">HOME</a></li>
@@ -32,80 +33,90 @@
         </nav>
     </header>
     <main>
-        <section class="presentacion"> <!-- aquí se da la bienvenida a los clientes -->
-            <h1>El vestido, es el alma de la novia, descubramos quién eres.</h1>
-            <img src="./asset/presentacion/Captura de pantalla 2025-03-26 124838.png" alt=""><img src="" alt=""><img src="" alt="">
-            <button id="boton_agenda">Agenda aquí</button>
+        <section class="presentacion" data-aos="fade-up" data-aos-duration="2000"> <!-- aquí se da la bienvenida a los clientes -->
+            <!-- <h1>El vestido, es el alma de la novia, descubramos quién eres.</h1> -->
+            <div class="slider-container">
+                <div class="slider">
+                    <img src="./asset/presentacion/1.png" alt="Imagen 1">
+                    <img src="./asset/presentacion/2.png" alt="Imagen 2">
+                    <img src="./asset/presentacion/3.png" alt="Imagen 3">
+                    <img src="./asset/presentacion/4.png" alt="Imagen 4">
+                </div>
+            </div>
+            <div class="slider-content">
+                 <h1>El vestido, es el alma de la novia, descubramos quién eres</h1>
+                 <a href="./html/agenda.html" class="btn-slider">Agenda Aquí</a>
+                </div>
+            </div>
         </section>
-       
-       
-        <section class="empresa"><!-- aquí se hace una breve presentacion de la empresa y de quienes lo componen -->
-            <p>Somos una empresa de diseño vanguardista, que busca sacar lo mejor de las novias para que disfruten de su día especial. Nuestro objetivo es  </p>
+              
+        <section class="empresa" data-aos="fade-up" data-aos-duration="2000"><!-- aquí se hace una breve presentacion de la empresa y de quienes lo componen -->
+            <p>En Viva la novia, creemos que cada historia de amor merece un vestido único. Nos especializamos en crear y seleccionar vestidos de novia que combinan elegancia, estilo y un toque de ensueño, para que vivas el día más importante de tu vida tal como lo imaginaste. Descubre nuestra colección y encuentra el vestido que te hará brillar desde el primer paso hacia el altar.</p>
             <div>
                 <img src="./asset/presentacion/Captura de pantalla 2025-03-26 124943.png" alt="">
             </div>
         </section>
              
         <h2>Vestidos disponibles</h2>
-        <section class="colecciones"> <!-- Aquí deben aparecer los vestidos más vendidos o disponibles a la venta. -->
-            <div class="card_container">
-                <div class="card_vestido">
+        <section class="colecciones" > <!-- Aquí deben aparecer los vestidos más vendidos o disponibles a la venta. -->
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/1.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 1</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/2.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 2</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/3.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 3</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/4.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 4</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/5.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 5</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/6.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 6</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/7.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 7</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/8.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 8</p>
                 </div>              
             </div>
-            <div class="card_container">
-                <div class="card_vestido">
+            <div class="card_container" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card">
                     <img src="./asset/vestidos/9.png" alt=""></div>
                 <div class="card_footer"> 
                     <p>Vestido de Novia 9</p>
@@ -141,5 +152,9 @@
         </div>
         <P>® Marca Registrada</P>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

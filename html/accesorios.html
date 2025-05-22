@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Viva la novia! Accesorios</title>
     <link rel="icon" type="image/x-icon" href="../asset/logo/favicon.gif">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,32 +37,32 @@
         <h2>Accesorios para la novia</h2>
      <!-- Aquí deben mostrarse las secciones de accesorios que tiene la web como indice general -->
         <h2>Velos de Novia</h2>
-        <section class="colecciones">        
-            <img src="../asset/velos/1.png">
-            <img src="../asset/velos/2.png" alt="">
-            <img src="../asset/velos/3.png" alt="">
+        <section class="colecciones" data-aos="fade-up" data-aos-duration="2000">    
+                <div class="card"><img src="../asset/velos/1.png" alt=""></div>
+                <div class="card"><img src="../asset/velos/2.png" alt=""></div>
+                <div class="card"><img src="../asset/velos/3.png" alt=""></div>
         </section>
         <h2>Tocados de Novia</h2>
-        <section class="colecciones">
-            <img src="../asset/tocados/1.png" alt="">
-            <img src="../asset/tocados/2.png" alt="">
-            <img src="../asset/tocados/3.png" alt="">
+        <section class="colecciones" data-aos="fade-up" data-aos-duration="2000">
+            <div class="card"><img src="../asset/tocados/1.png" alt=""></div>
+            <div class="card"><img src="../asset/tocados/2.png" alt=""></div>
+            <div class="card"><img src="../asset/tocados/3.png" alt=""></div>
         </section>
         <h2>Joyeria para novias</h2>
-        <section class="colecciones"> 
-            <img src="../asset/joyas/1.png" alt="">
-            <img src="../asset/joyas/2.png" alt="">
-            <img src="../asset/joyas/3.png" alt="">
+        <section class="colecciones" data-aos="fade-up" data-aos-duration="2000"> 
+            <div class="card"><img src="../asset/joyas/1.png" alt=""></div>
+            <div class="card"><img src="../asset/joyas/2.png" alt=""></div>
+            <div class="card"><img src="../asset/joyas/3.png" alt=""></div>
         </section>
         <h2>Calzado de novia</h2>
-        <section class="colecciones">
-            <img src="../asset/zapatos/1.png" alt="">
-            <img src="../asset/zapatos/2.jpg" alt="">
-            <img src="../asset/zapatos/3.jpg" alt="">
+        <section class="colecciones" data-aos="fade-up" data-aos-duration="2000">
+            <div class="card"><img src="../asset/zapatos/1.png" alt=""></div>
+            <div class="card"><img src="../asset/zapatos/2.jpg" alt=""></div>
+            <div class="card"><img src="../asset/zapatos/3.jpg" alt=""></div>
         </section>
     </main>
     <footer>
-        <div class="footer_container">
+        <div class="footer_container" >
             <div class="footer_section">
                 <h4>Contacto</h4>
                 <li>Mi calle preferida 123, piso 3, mi comuna.</li>
@@ -88,5 +89,9 @@
         </div>
         <P>® Marca Registrada</P>
     </footer>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
