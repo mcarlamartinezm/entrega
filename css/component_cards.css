@@ -4,12 +4,12 @@
   overflow: hidden;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  transition: scale, 20s, ease-in;
 }
 
 .card_container:hover {
   transform: scale(105%);
   cursor: pointer;
-  transition: scale, 20s, ease-in;
 }
 
 .card {
@@ -33,12 +33,14 @@
 .card_footer {
   font-family: "lavishly Yours";
   position: absolute;
-  bottom: -30px;
+  bottom: -20px;
   width: 100%;
   color: #fff;
   padding: 0px;
   text-align: bottom;
+  text-align: center;
   font-size: 2.2em;
+  text-shadow: 2px 3px 2px lightsalmon;
 }
 
 /*# sourceMappingURL=component_cards.css.map */

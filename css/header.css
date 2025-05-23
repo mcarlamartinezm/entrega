@@ -51,7 +51,7 @@ div#logo figure img {
   max-width: 50%;
   list-style: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 8px;
 }
 
@@ -65,7 +65,6 @@ div#logo figure img {
 
 #menu_desplegable li:hover {
   background-color: rgb(255, 230, 221);
-  padding: 4px;
   border-radius: 16px;
 }
 

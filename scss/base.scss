@@ -8,17 +8,56 @@ body{
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h2 {   /* <----------titulos--------*/
   display: flex;
-  justify-content: center;
-  margin: 50px 0px;
-  font-size:1.8em;
+  justify-content: left;
+  margin: 40px 100px;
+  color: rgb(53, 49, 46);
+  font-size: 2rem;
+  text-shadow: 0px 5px 2px rgb(212, 212, 212);
+  
 }
 
-section{
+section {
   display: block;
-  
+  margin: 1%;
+}
+
+article{
+  font-size: 1.5em;
+}
+
+form {
+  background: white;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  max-width: 70%;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: black;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: lightsalmon;
+  outline: none;
 }
 
