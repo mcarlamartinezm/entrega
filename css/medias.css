@@ -35,10 +35,9 @@ h1 {
   margin: 10%;
 }
 
-#filtro_container form {
-  display: flex;
-  flex-direction: column;
-  justify-items: baseline;
+article {
+  font-size: 1em;
+  text-align: center;
 }
 
 .footer_container {
@@ -60,6 +59,10 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 5%;
+  }
+  article {
+    font-size: 1.8em;
+    text-align: center;
   }
   .footer_container {
     flex-direction: row;

@@ -35,8 +35,19 @@
   font-weight: 600;
 }
 
-.boton_enviar {
+#reserva input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid lightsalmon;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  transition: border 0.2s ease-in-out;
+}
+
+#boton_enviar {
   width: 100px;
+  height: 40px;
   background-color: lightsalmon;
   color: white;
   padding: 0.9rem;
@@ -47,7 +58,7 @@
   transition: 0.2s ease-in-out;
 }
 
-button:hover {
+#boton_enviar :hover {
   background-color: lightsalmon;
 }
 
@@ -60,8 +71,7 @@ button:hover {
   font-size: 1rem;
   transition: border 0.2s ease-in-out;
   height: 300px;
-  text-align: left;
-  vertical-align: top;
+  text-align: top;
 }
 
 /*# sourceMappingURL=component_agenda.css.map */
