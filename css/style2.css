@@ -87,7 +87,7 @@ div#logo figure img{
     
   }
 
-  #menu_desplegable li:hover {
+  .menu_desplegable li:hover {
     background-color: rgb(255, 230, 221);
     padding: 4px;
     border-radius: 16px;

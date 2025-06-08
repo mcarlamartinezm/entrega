@@ -7,7 +7,6 @@
    display: flex;
    flex-direction: row-reverse;
   }
-
      
   .slider img {
     height: 70vh;
@@ -62,14 +61,11 @@
 /* Mostrar menú completo desde 768px hacia arriba */
 
 
-@media (min-width: 768px) {
-
+@media (min-width: 700px) {
 
 #menu_icon{
   display: none;
 }
-
-
 
 .colecciones{
     display: grid;
@@ -80,7 +76,7 @@
 
 article{
   font-size: 1.8em;
-  text-align: center;
+  text-align: left;
 }
 
 .footer_container{

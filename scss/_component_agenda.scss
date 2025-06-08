@@ -1,18 +1,16 @@
 
 .explicacion{
+  width: 60%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
-  margin: 100px 5%;
+  margin: 50px 15%;
 }
 
 .explicacion img{
-  width: 100px;
+  width: 1%;
   object-fit: cover;
-  border-radius: 20px;
 }
-
-
 
 /*formulario de agenda de visita*/
 
